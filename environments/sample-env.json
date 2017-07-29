@@ -1,0 +1,9 @@
+{
+  "chef_type": "environment",
+  "cookbook_versions": {},
+  "default_attributes": {},
+  "description": "use this as a template for new environments",
+  "json_class": "Chef::Environment",
+  "name": "sample-environment",
+  "override_attributes": {}
+}

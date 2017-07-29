@@ -1,0 +1,16 @@
+{
+	"chef_type": "role",
+	"default_attributes": {
+		"chefdk": {
+			"version": "0.11.2"
+		}
+	},
+	"description": "use this as a template for new roles",
+	"env_run_lists": {},
+	"json_class": "Chef::Role",
+	"name": "sample-role",
+	"override_attributes": {},
+	"run_list": [
+		"recipe[chef-sample-cookbook]"
+	]
+}

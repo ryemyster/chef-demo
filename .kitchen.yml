@@ -1,0 +1,21 @@
+ driver:
+   name: vagrant
+   network:
+     - ["forwarded_port", {guest: 80, host: 8888}]
+
+ provisioner:
+   name: chef_zero
+   require_chef_omnibus: 12.5.1
+   always_update_cookbooks: true
+
+ platforms:
+   - name: ubuntu/artful32
+   # - name: centos-7.3
+
+ suites:
+   - name: chef-demo
+     run_list:
+       - ["role[apt]", "role[java]","role[sample-role]"]
+     attributes:
+     excludes:
+       - centos-7.3

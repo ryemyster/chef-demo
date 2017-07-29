@@ -1,0 +1,20 @@
+{
+  "chef_type": "role",
+  "default_attributes": {},
+  "description": "Install JDK",
+  "env_run_lists": {},
+  "json_class": "Chef::Role",
+  "name": "java",
+  "override_attributes": {
+    "java": {
+      "jdk_version": "8",
+      "install_flavor": "oracle",
+      "oracle": {
+        "accept_oracle_download_terms": true
+      }
+    }
+  },
+  "run_list": [
+    "recipe[java]"
+  ]
+}
