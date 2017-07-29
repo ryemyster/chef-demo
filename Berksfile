@@ -2,7 +2,7 @@
 source 'https://supermarket.getchef.com'
 metadata
 
-cookbook 'apt', '~> 2.3.8'
+cookbook 'apt', '~> 6.1.3'
 cookbook 'java',
          git: 'https://github.com/agileorbit-cookbooks/java.git',
          ref: 'afc1302fc34413752f0e46f576feedea23e54b17'
