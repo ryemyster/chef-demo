@@ -1,7 +1,7 @@
 {
   "chef_type": "role",
   "default_attributes": {},
-  "description": "base apt for deb OS",
+  "description": "Apt for OS",
   "env_run_lists": {},
   "json_class": "Chef::Role",
   "name": "apt",
